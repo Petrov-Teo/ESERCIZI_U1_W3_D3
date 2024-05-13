@@ -14,11 +14,23 @@ function stringaConcatenata(s1, s2) {
   return console.log(s4);
 }
 const stringa3 = stringaConcatenata(stringa1, stringa2);
-console.log;
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+
+const arrayRandom = function (params) {
+  const a1 = [];
+  for (let index = 0; index < 10; index++) {
+    const element = Math.floor(Math.random() * 101);
+    a1.push(element);
+    return a1;
+  }
+};
+cs;
+
+const arrCasuale = arrayRandom();
+console.log(arrCasuale);
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
